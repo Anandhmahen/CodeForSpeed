@@ -1,0 +1,14 @@
+In most cases, the browser will automatically redirect http to https. But if you want to directly access http, you can do the following:
+
+1. Go to the below address for accessing the HSTS settings -> 
+    Edge
+        edge://net-internals/#hsts
+    Chrome
+        chrome://net-internals/#hsts
+
+2. Look for the following heading:
+    Delete domain security policies
+
+3. Enter the domain you want to reset the http -> https redirection and press the Delete button
+
+Now you can access http://<your-domain> directly.
